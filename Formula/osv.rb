@@ -5,21 +5,21 @@
 class Osv < Formula
   desc "A cli to interact with operating system vaults."
   homepage "https://github.com/frostyeti/osv"
-  version "0.0.0-alpha.0"
+  version "0.0.0-alpha.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/frostyeti/osv/releases/download/v0.0.0-alpha.0/osv_darwin_amd64.tar.gz"
-      sha256 "26f8bf8c6b94a4d4d3b4989e21c3f73c19f2e5fbbfd07dedbe5a1421caee6e33"
+      url "https://github.com/frostyeti/osv/releases/download/v0.0.0-alpha.1/osv_darwin_amd64.tar.gz"
+      sha256 "143f13f4a581fafc1afc8586002e5b5c3087345dad4414d7975951103ed675b1"
 
       define_method(:install) do
         bin.install "osv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/frostyeti/osv/releases/download/v0.0.0-alpha.0/osv_darwin_arm64.tar.gz"
-      sha256 "6f3eaf79daa000217912cf0fe8ae91bf107e5179c5faa6cca201b82c7e7b5558"
+      url "https://github.com/frostyeti/osv/releases/download/v0.0.0-alpha.1/osv_darwin_arm64.tar.gz"
+      sha256 "e02e910f9e635500a4c2fb482de870b0c17f86fc6753059bf23c6d898c30ee21"
 
       define_method(:install) do
         bin.install "osv"
@@ -29,15 +29,15 @@ class Osv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frostyeti/osv/releases/download/v0.0.0-alpha.0/osv_linux_amd64.tar.gz"
-      sha256 "6c378c824eb8c5c666da1b968f11ceee6cc19c393108525c3aee4149bc5ffebe"
+      url "https://github.com/frostyeti/osv/releases/download/v0.0.0-alpha.1/osv_linux_amd64.tar.gz"
+      sha256 "243fec3d1c764d5494e0eb3e3d95a845316d672b11cd0aab7bc83eceef2dae86"
       define_method(:install) do
         bin.install "osv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frostyeti/osv/releases/download/v0.0.0-alpha.0/osv_linux_arm64.tar.gz"
-      sha256 "30f909a9efe0f1d31e45420fc939d7d93f570ecbe77369f0a5444db76d3253c2"
+      url "https://github.com/frostyeti/osv/releases/download/v0.0.0-alpha.1/osv_linux_arm64.tar.gz"
+      sha256 "08eb3d5b4a69bbe0f264e21962618a1149a2afcb579d9b7b79f1892ad0f57c4b"
       define_method(:install) do
         bin.install "osv"
       end
