@@ -5,20 +5,20 @@
 class Akv < Formula
   desc "Azure Key Vault command-line interface"
   homepage "https://github.com/frostyeti/akv"
-  version "0.0.0-alpha.7"
+  version "0.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.7/akv-darwin-amd64-v0.0.0-alpha.7.tar.gz"
-      sha256 "bd98605091dff4a463fe44f0de7b52c52d915dccb553ee6b699b0c13ab10abbe"
+      url "https://github.com/frostyeti/akv/releases/download/v0.0.0/akv-darwin-amd64-v0.0.0.tar.gz"
+      sha256 "52a3343fe23f99c32af28566c0c170a7a02776e62bfd1ca234a1b4479ec3bc48"
 
       define_method(:install) do
         bin.install "akv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.7/akv-darwin-arm64-v0.0.0-alpha.7.tar.gz"
-      sha256 "3c685336a3e154758a5a960805a3197b2df4105e2e8507d893768f051baeb9d4"
+      url "https://github.com/frostyeti/akv/releases/download/v0.0.0/akv-darwin-arm64-v0.0.0.tar.gz"
+      sha256 "e8944f56b7f308371e1442878bd1061b6bfcd56388ac252145071292b2ccd28d"
 
       define_method(:install) do
         bin.install "akv"
@@ -28,15 +28,15 @@ class Akv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.7/akv-linux-amd64-v0.0.0-alpha.7.tar.gz"
-      sha256 "150ce83c574bfaa016493e381e96c1e2ded5d3b20df4b02ff2291fa930af4204"
+      url "https://github.com/frostyeti/akv/releases/download/v0.0.0/akv-linux-amd64-v0.0.0.tar.gz"
+      sha256 "9f8ee188a9bf8888afc08f812ecbcabeb3e35f91c390c9bb7b0cad1154ee4492"
       define_method(:install) do
         bin.install "akv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.7/akv-linux-arm64-v0.0.0-alpha.7.tar.gz"
-      sha256 "b6b18c7169497177868c4ca2a69da82a28f31e38106f430e9d7a93b8714c59dd"
+      url "https://github.com/frostyeti/akv/releases/download/v0.0.0/akv-linux-arm64-v0.0.0.tar.gz"
+      sha256 "0018f6d83599a14c24c371ca50b2aa4409096486aaf05ec1426adc456501f4cd"
       define_method(:install) do
         bin.install "akv"
       end
