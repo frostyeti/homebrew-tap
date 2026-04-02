@@ -10,7 +10,7 @@ class Akv < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.1/akv-darwin-amd64-v0.0.0-alpha.1.tar.gz"
-      sha256 "0b95b83cf0a5e35b276bce525f0f2638d3b55e6b936f9c3dfa3ae34a102c60a9"
+      sha256 "8ed2391e444e916b52140243524c6208be82bece88ac74b0ffb33de8a1a68f47"
 
       define_method(:install) do
         bin.install "akv"
@@ -18,7 +18,7 @@ class Akv < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.1/akv-darwin-arm64-v0.0.0-alpha.1.tar.gz"
-      sha256 "c6b4d31ba896f3984e35519b8528c845adceb18e6435248d040cf83877d919d3"
+      sha256 "668fc6045ec644688f40caa86ec1006374adc19cb690d0de77c12ef58b744497"
 
       define_method(:install) do
         bin.install "akv"
@@ -29,14 +29,14 @@ class Akv < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.1/akv-linux-amd64-v0.0.0-alpha.1.tar.gz"
-      sha256 "71b177b5fe03723771a9f2f9d5c556595cbea95d04c6678d89a5f1512fda8f25"
+      sha256 "08c7365a34eb64598d5440b429005bd2f085219c7cee67c2e251e4db38c7cf2d"
       define_method(:install) do
         bin.install "akv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.1/akv-linux-arm64-v0.0.0-alpha.1.tar.gz"
-      sha256 "53792347771e26af75a9c6ca0c1a7c9e353411b9067f54bc232668cf515d6a6c"
+      sha256 "27d17d26a930bb72b31a6d8642d78d38eb01bd0ce58e34ea7ff8eb261f1cc82d"
       define_method(:install) do
         bin.install "akv"
       end
