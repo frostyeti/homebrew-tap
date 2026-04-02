@@ -5,20 +5,20 @@
 class Akv < Formula
   desc "Azure Key Vault command-line interface"
   homepage "https://github.com/frostyeti/akv"
-  version "0.0.0-alpha.2"
+  version "0.0.0-alpha.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.2/akv-darwin-amd64-v0.0.0-alpha.2.tar.gz"
-      sha256 "9c136f42c88efaafa07d50c485ac7801afdb820de16d2b2a924af8808d812bc3"
+      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.3/akv-darwin-amd64-v0.0.0-alpha.3.tar.gz"
+      sha256 "a5e5b9bbba824d43984ef150d4a0239f7f5ab38b872b1fca9d9a24ac9800e495"
 
       define_method(:install) do
         bin.install "akv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.2/akv-darwin-arm64-v0.0.0-alpha.2.tar.gz"
-      sha256 "31c30fc5415fc52a347579ab1876f67f597925a933a2e5b27a79a57094c3b100"
+      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.3/akv-darwin-arm64-v0.0.0-alpha.3.tar.gz"
+      sha256 "a733d2062d86cbcd9ae1bb060232bacc9f3fe9bcfa7a5799389f280326b0b828"
 
       define_method(:install) do
         bin.install "akv"
@@ -28,15 +28,15 @@ class Akv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.2/akv-linux-amd64-v0.0.0-alpha.2.tar.gz"
-      sha256 "e04e42be2599aa94d0b6e9c5d80d331c52509098b6302ca5853f7222bf01701c"
+      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.3/akv-linux-amd64-v0.0.0-alpha.3.tar.gz"
+      sha256 "2da6c16f3854781f5422687fde1d0119cd004ff674cbf6c98b63ec02b46fce35"
       define_method(:install) do
         bin.install "akv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.2/akv-linux-arm64-v0.0.0-alpha.2.tar.gz"
-      sha256 "6bff9e064376678536d5098788f57f06167253e6bf63b3867ca6ac7861ab9030"
+      url "https://github.com/frostyeti/akv/releases/download/v0.0.0-alpha.3/akv-linux-arm64-v0.0.0-alpha.3.tar.gz"
+      sha256 "922d24f621823118ff5f4bff87976c870c73d2375a0f307c9dfff887df9237f4"
       define_method(:install) do
         bin.install "akv"
       end
